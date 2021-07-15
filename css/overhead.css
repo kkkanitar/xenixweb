@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+h2{
+  font-weight: 600;
+  font-size: 14px;
+}
+h3{
+  font-size: 44px;
+  line-height: 55px;
+  color: #121212;
+  font-weight: 600;
+}
+h4{
+  text-align: left;
+  font-weight: 300;
+  margin:0 0 30px 0;
+}
+h5{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px
+}
+h6{
+  text-align: left;
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 18px;
+}
+  
+  /********************** nav ************************/
+  .nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 100000;
+  }
+  .nav.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-sizing: 7px 10px 15px rgba(0,0,0,0.3);
+  }
+  .nav .navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
+  }
+  .nav .navbar-toggler .toggler-icon{
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-out 0s;
+  }
+  .nav .menu-bar .menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .menu-bar .menu-item li{
+    margin: 0 15px;
+  }
+  .nav .menu-bar .menu-item li a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav .menu-bar .menu-item li a:hover{
+    color: #a80000;
+  }
+  
+  
+  /********************** head-shape ************************/
+  .back{
+    /* background-image: url(https://www.img.in.th/images/da796d73f3d1193abf7ad21bde5e91e5.png); */
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .back .overlay{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.733)),
+                url(https://www.img.in.th/images/adf0539f7758adceb5ad7b36df578bfc.png);
+    width: 100%;
+    height: 100%;
+  }
+  .back .hero-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .back .hero-shape img{
+    width: 100%;
+    display: block;
+  }
+  @media (max-width: 946px){
+    .nav{
+        padding: 1rem 1rem;
+    }
+  }
+  @media (max-width: 774px){
+    .nav{
+        padding: 0.7rem 1rem;
+    }
+    .nav .navbar-toggler{
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index:  1000000;
+        cursor: pointer;
+    }
+    .nav .menu-bar {
+        position: fixed;
+        top: 55px;
+        width: 300px;
+        right: -360px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256,0.9);
+        transition: all 0.6s ease;
+    }
+    .nav .menu-bar .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+    .nav .menu-bar .menu-item li{
+        margin: 2rem 30px;
+    }
+  }
+  
+  
+  
+  /********************** main ************************/
+.row-local{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-top: 50px;
+  }
+
+.col-img{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.col-img img{
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 0px auto;
+  width: 100%;
+}
+.col-text{
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 30px;
+  width: 550px;
+}
+.col-text h1{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 3.2em;
+}
+.col-text p{
+  font-weight: 200;
+  font-size: 14px;
+  width: 550px;
+}
+
+
+/* localrailway */
+.localrailway{
+  width: 100%;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+    url(https://www.tuvsud.com/hu-hu/-/media/global/images/industries/infrastructure-and-rail/rail/istock-698673380-complete-railway-system.jpg?pid=fe97b8ad-d039-4523-b3d0-c7e93906f2e0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+    color: white;
+    margin: 2em 0em;
+    height: 120px;
+}
+.col-img h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/********************** previous and next ************************/
+  .prenext a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: 3%;
+  }
+  
+  .prenext a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+    margin-left: 5%;
+  }
+  
+  .next {
+    background-color: #aa0404;
+    color: white;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .round {
+    border-radius: 0%;
+  }
+  
+  /* footer */
+  h2{
+    font-weight: 600;
+    font-size: 17px;
+  }
+  footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px 50px 30px;
+    color: #fff;
+    background-color: #2e2e2e;
+    z-index: -5;
+    margin-top: 8%;
+  }
+  .footer > *{
+    flex: 1 100%;
+  }
+  .footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  .footer-logo {
+    width: 60%;
+  }
+  .footer-socotec{
+    width: 55%;
+    margin: 15px;
+  }
+  .footer ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  .footer li{
+    line-height: 2em;
+  }
+  .footer a{
+    text-decoration: none;
+  }
+  .footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  .box a{
+    color: #999;
+  }
+  .footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 30px;
+  }
+  @media(min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+    .row{
+      display: grid;
+      grid-row: inherit;
+  }
+  }
+
+
+  /* responsive */
+  
+  @media (max-width:1050px){
+    .col-text p{
+      width: 500px;
+    }
+  }
+
+  @media (max-width:992px){
+    .row, .row-local {
+      flex-wrap: wrap;
+    }
+    .col-text{
+      padding-left: 20px;
+      margin: 0px 0px;
+    }
+  }
+
+  @media (max-width:768px){
+    .col-text,.col-text p{
+      width: 500px;
+      padding-left: 0px;
+    }
+  }
+
+  @media (max-width:576px){
+    .col-text,.col-text p{
+      width: 450px;
+    }
+  }
+
+  @media (max-width:496px){
+    .col-text,.col-text p{
+      width: 90%;
+    }
+    
+  }
