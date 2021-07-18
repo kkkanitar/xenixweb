@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  h3{
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+  }
+  h4{
+    text-align: left;
+    font-weight: 300;
+    margin:0 0 30px 0;
+  }
+  h5{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+  }
+  h6{
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  
+ /********************** head-shape ************************/
+ .banner{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #111;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: rgba(0,0,0,0,5);
+
+}
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    pointer-events: none;
+}
+.banner .hero-text{
+    position: relative;
+    max-width: 550px;
+    z-index: 2;
+}
+.banner .hero-text h3{
+    color: white;
+    font-size: 3em;
+}
+.banner .hero-text h6{
+    font-size: 1.1em;
+    color: white;
+    margin: 5px 0 25px;
+}
+.banner .hero-text a{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .video{
+    position: relative;
+    background: #fff;
+    margin-left: 40px;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+}
+.banner .video video{
+    opacity: 1;
+}
+
+@media(max-width:991px){
+    .banner{
+        padding: 150px 50px 0;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .banner:before{
+        display: none;
+    }
+    .banner .hero-text{
+        max-width: 100%;
+    }
+    .banner .hero-text h3{
+        font-size: 2.5em;
+    }
+    .banner .video{
+        width: 100%;
+        height: 300px;
+        margin: 40px 0 50px;
+    }
+}
+  /* nav */
+/* nav */
+
+
+/********************** top-product ************************/
+.textbox h1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.textbox p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.bg-light {
+  background-color: #ffffff!important;
+}
+.py-5 {
+  padding-top: 3rem!important;
+  padding-bottom: 3rem!important;
+}
+div {
+  display: block;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: auto;
+  
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: auto;
+ 
+}
+.g-3, .gx-3 {
+  --bs-gutter-x: 1rem;
+}
+.g-3, .gy-3 {
+  --bs-gutter-y: 1rem;
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.bd-placeholder-img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.card-img, .card-img-top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 100%;
+}
+img .card-img-top {
+  vertical-align: middle;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+p .card-text {
+  margin-top: 0;
+  margin-bottom: 1rem; 
+  display: block;
+  margin: auto;
+}
+p{
+  font-size: 15.5px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn .more{
+  display: inline-block;
+  padding: 6px 16px;
+  background: #a80000;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  margin:20px auto;
+}
+.col {
+  flex: 1 0 0%;
+}
+.row-cols-1>* {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* localrailway */
+.localrailway{
+  width: 100%;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+    url(https://www.tuvsud.com/hu-hu/-/media/global/images/industries/infrastructure-and-rail/rail/istock-698673380-complete-railway-system.jpg?pid=fe97b8ad-d039-4523-b3d0-c7e93906f2e0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+    color: white;
+    margin: 2em 0em;
+    height: 300px;
+}
+.col-img h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+.col-text .local-text-box{
+  margin-bottom: 20px;
+}
+.local-text-box{
+  padding-top: 22px;
+}
+
+/********************** localproduct ************************/
+.row-local{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  }
+
+.col-img{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.col-img img{
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 0px auto;
+  width: 100%;
+}
+.col-text{
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 30px;
+  width: 550px;
+}
+.col-text h1{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.col-text p{
+  font-weight: 200;
+  font-size: 14px;
+  width: 550px;
+}
+
+
+/********************** hr ************************/
+hr:not([size]) {
+  height: 1px;
+}
+.featurette-divider {
+  margin: 2rem 5rem;
+
+}
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+/********************** responsive ************************/
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+}
+
+@media (max-width:1050px){
+  .col-text p{
+    width: 500px;
+  }
+}
+
+@media (min-width: 992px){
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 960px;
+  }
+  /* Caption text */
+
+  }
+  @media (max-width:992px){
+    .row, .row-local {
+      flex-wrap: wrap;
+    }
+    .col-text{
+      padding-left: 20px;
+      margin: 0px 0px;
+    }
+  }
+  
+  @media (min-width: 768px){
+  .container, .container-md, .container-sm {
+      max-width: 720px;
+  }
+  .row-cols-md-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  }
+  @media (max-width:768px){
+    .col-text,.col-text p{
+      width: 500px;
+      padding-left: 0px;
+    }
+  }
+
+  @media (min-width: 576px){
+  .container, .container-sm {
+      max-width: 540px;
+  }
+  .row-cols-sm-2>* {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  }
+  @media (max-width:576px){
+    .col-text,.col-text p{
+      width: 450px;
+    }
+  }
+
+  @media (max-width:496px){
+    .col-text,.col-text p{
+      width: 90%;
+    }
+    
+  }
+  

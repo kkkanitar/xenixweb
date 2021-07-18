@@ -1,18 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-  }
-  *:before,*:after{
-    box-sizing: border-box;
-  }
-  a{
-    text-decoration: none;
-  }
-  li{
-    list-style: none;
-  }
+
   h1{
     font-size: 36px;
     font-weight: 600;
@@ -41,63 +27,10 @@
       font-size: 18px;
   }
 
-  
-/********************** nav ************************/
-.nav{
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 6.5rem;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: 100000;
-}
-.nav.scrolled{
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-  box-sizing: 7px 10px 15px rgba(0,0,0,0.3);
-}
-.nav .navbar-toggler{
-  display: none;
-  border: none;
-  outline: none;
-}
-.nav .navbar-toggler .toggler-icon{
-  width: 27px;
-  height: 3px;
-  background-color: #121212;
-  margin: 5px 0;
-  position: relative;
-  display: block;
-  transition: all 0.3s ease-out 0s;
-}
-.nav .menu-bar .menu-item{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.nav .menu-bar .menu-item li{
-  margin: 0 15px;
-}
-.nav .menu-bar .menu-item li a{
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-}
-.nav .menu-bar .menu-item li a:hover{
-  color: #a80000;
-}
-
-
-
 /************************ contain ************************/
 /** slider section **/
 #main_slider {
-    padding: 90px 0 30px;
+    padding:  0 30px;
 }
 .slider_section .container {
     width: 100%;
@@ -148,7 +81,7 @@
 #main_slider a.carousel-control-prev {
     position: absolute;
     left: 50px;
-    top: 42%;
+    top: 38%;
 }
 #main_slider a.carousel-control-next {
     position: absolute;
@@ -201,9 +134,6 @@
 
 
 @media (max-width: 1120px){
-    .nav{
-        padding: 1rem 1rem;
-    }
     .slider_cont {
         padding-left: 190px;
         float: left;
