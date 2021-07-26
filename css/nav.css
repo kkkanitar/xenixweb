@@ -32,7 +32,7 @@ header{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(142, 142, 142, 0.5);
+    background-color: rgba(45, 45, 45, 0.5);
 }
 
 .container-nav{
@@ -132,7 +132,7 @@ header{
     display: flex;
     background-color: #fff;
     color: rgb(95, 95, 95);
-    padding: .5rem 1rem;
+    padding: 13px 10px;
     font-size: .9rem;
     align-items: center;
     justify-content: space-between;

@@ -54,14 +54,14 @@
     margin: 100px 0 0;
 }
 .slider_cont h3 {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 600;
     color: #000;
     line-height: 70px;
     letter-spacing: -2px;
 }
 .slider_cont p {
-    font-size: 18px;
+    font-size: 14px;
     color: #999;
     line-height: normal;
     font-weight: 300;
@@ -126,7 +126,9 @@
     color: rgba(255, 0, 0, 0.612);
   }
   
-
+  a:-webkit-any-link {
+    text-decoration-line: none;
+  }
 
 
 

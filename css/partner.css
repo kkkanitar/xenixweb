@@ -19,9 +19,9 @@
   }
   h3{
     font-size: 44px;
-    line-height: 55px;
-    color: #121212;
-    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 800;
   }
   h4{
   text-align: left;
@@ -62,13 +62,13 @@
   }
   .hero-text{
     position: absolute;
-    top: 33%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%,50%);
     text-align: center;
   }
   .hero-text h6{
-    color: #1d1d1d;
+    color: #fff;
   }
   .hero-text .header-btn{
     margin-top: 22px;
@@ -149,7 +149,7 @@
   color: #111;
   }
   .row h1{
-  font-size: 58px;
+  font-size: 40px;
   font-weight: 600;
   padding-top: 30px;
   }
@@ -158,11 +158,8 @@
   margin-bottom: 5%;
   padding: 0 12px 0 ;
   }
-  .service-col:hover{
-  box-shadow: 0 0 20px 0px rgba(71, 71, 71, 0.301);
-  }
   .service-col img{
-  width: 50%;
+  width: 100%;
   }
   .port{
   width: 100%;
@@ -300,5 +297,8 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
   }
-
-  
+  .row h1 span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+  }

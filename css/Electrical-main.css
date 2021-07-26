@@ -74,9 +74,10 @@ background: #111;
   font-size: 3em;
 }
 .banner .hero-text h6{
+  font-weight: 200;
   font-size: 1.1em;
   color: white;
-  margin: 5px 0 25px;
+  margin: 25px 0;
 }
 .banner .hero-text a{
   position: relative;
@@ -229,16 +230,17 @@ p{
   font-family: 'Poppins', sans-serif;
 }
 
-.btn .more{
+.btn-seemore{
   display: inline-block;
-  padding: 6px 16px;
+  padding: 6px 35px;
   background: #a80000;
-  color: #fff;
-  border-radius: 5px;
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 12px;
   margin:20px auto;
+} 
+.btn-seemore a{
+  color: #fff;
 }
 .col {
   flex: 1 0 0%;
